@@ -41,6 +41,7 @@ proc solve(vertex: array[2, int], history: seq[seq[int]], dx: int, dy: int, path
                 for x in 0->history_clone[0].len() - 1:
                     if (history_clone[y][x] == 0):
                         solved = false
+                        echo x, ", ", y
                         break check_for_solved
 
         if (solved):
@@ -101,10 +102,14 @@ for y in 0->board_size_y - 1:
 var t0 = cpuTime()
 for index in countup(0, starting_vertices.len() - 1):
     var vertex = starting_vertices[index]
+    echo "Solving ", vertex, ".."
     var results = solve(vertex, history, 0, 0, "")
     if (results.len() > 0):
         echo "\n",format(vertex, results),"\n"
         break
+
+    if (index mod 100 == 0): 
+        GC_fullCollect()
 
 echo "Time taken: ", (cpuTime() - t0) , "s"
 echo "\nPress enter to quit.."

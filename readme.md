@@ -8,7 +8,7 @@ Does not solve Level 96. ¯\\\_(ツ)\_/¯
 ## Compile
 
 1. Clone this repository
-> `git clone git@github.co m:Corned/coil.nim.git`
+> `git clone git@github.com:Corned/coil.nim.git`
 
 2. Install Nim
 
