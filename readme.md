@@ -19,3 +19,4 @@ Follow the installation instructions: https://nim-lang.org/install.html
 > `nim compileToC -d:release --out:MortalCoilSolver main.nim`
 
 ## Or just go grab the latest release
+[MortalCoilSolver.exe](https://github.com/Corned/coil.nim/releases)
