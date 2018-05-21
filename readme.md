@@ -3,7 +3,7 @@
 A solver for [Mortal Coil](http://www.hacker.org/coil/index.php).
 
 ## Known bugs
-Does not solve Level 96. ¯\\\_(ツ)\_/¯
+None.
 
 ## Compile
 
